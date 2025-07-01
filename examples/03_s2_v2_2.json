@@ -2,7 +2,11 @@
     "shipments": [
         {
             "pickup": {
-                "address": "서울특별시 용산구 한강대로 405",
+                "location": {
+                    "longitude": 126.9706,
+                    "latitude": 37.5407
+                },
+                "description": "서울특별시 용산구 한강대로 405",
                 "worktime": 600,
                 "preworktime": 120,
                 "timewindow": {
@@ -11,7 +15,11 @@
                 }
             },
             "delivery": {
-                "address": "인천광역시 중구 공항로 272",
+                "location": {
+                    "longitude": 126.4407,
+                    "latitude": 37.4691
+                },
+                "description": "인천광역시 중구 공항로 272",
                 "worktime": 400,
                 "preworktime": 0,
                 "timewindow": {
@@ -32,7 +40,11 @@
         },
         {
             "pickup": {
-                "address": "경기도 고양시 일산동구 중앙로 1275",
+                "location": {
+                    "longitude": 126.7736,
+                    "latitude": 37.6569
+                },
+                "description": "경기도 고양시 일산동구 중앙로 1275",
                 "worktime": 300,
                 "preworktime": 0,
                 "timewindow": {
@@ -41,7 +53,11 @@
                 }
             },
             "delivery": {
-                "address": "경기도 파주시 평화로 1",
+                "location": {
+                    "longitude": 126.7781,
+                    "latitude": 37.7595
+                },
+                "description": "경기도 파주시 평화로 1",
                 "worktime": 300,
                 "preworktime": 0,
                 "timewindow": {
@@ -63,8 +79,14 @@
     ],
     "vehicles": [
         {
-            "start_address": "서울특별시 서초구 반포대로 222",
-            "end_address": "서울특별시 서초구 반포대로 222",
+            "start_location": {
+                "longitude": 127.0106,
+                "latitude": 37.4916
+            },
+            "end_location": {
+                "longitude": 127.0106,
+                "latitude": 37.4916
+            },
             "capacity": [
                 100
             ],
@@ -85,8 +107,14 @@
             ]
         },
         {
-            "start_address": "경기도 의정부시 시민로 1",
-            "end_address": "경기도 의정부시 시민로 1",
+            "start_location": {
+                "longitude": 127.0478,
+                "latitude": 37.7380
+            },
+            "end_location": {
+                "longitude": 127.0478,
+                "latitude": 37.7380
+            },
             "capacity": [
                 100
             ],

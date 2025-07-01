@@ -2,7 +2,11 @@
     "shipments": [
         {
             "pickup": {
-                "address": "서울특별시 강남구 테헤란로 152",
+                "location": {
+                    "longitude": 127.0276,
+                    "latitude": 37.4979
+                },
+                "description": "서울특별시 강남구 테헤란로 152",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -11,7 +15,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 서초구 서초대로74길 11",
+                "location": {
+                    "longitude": 127.0234,
+                    "latitude": 37.4836
+                },
+                "description": "서울특별시 서초구 서초대로74길 11",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -28,7 +36,11 @@
         },
         {
             "pickup": {
-                "address": "서울특별시 마포구 월드컵북로 396",
+                "location": {
+                    "longitude": 126.9157,
+                    "latitude": 37.5665
+                },
+                "description": "서울특별시 마포구 월드컵북로 396",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -37,7 +49,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 은평구 통일로 1050",
+                "location": {
+                    "longitude": 126.9157,
+                    "latitude": 37.6176
+                },
+                "description": "서울특별시 은평구 통일로 1050",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -55,7 +71,11 @@
         },
         {
             "pickup": {
-                "address": "서울특별시 영등포구 국제금융로 10",
+                "location": {
+                    "longitude": 126.9024,
+                    "latitude": 37.5294
+                },
+                "description": "서울특별시 영등포구 국제금융로 10",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -64,7 +84,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 구로구 디지털로 300",
+                "location": {
+                    "longitude": 126.8895,
+                    "latitude": 37.4844
+                },
+                "description": "서울특별시 구로구 디지털로 300",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -81,7 +105,11 @@
         },
         {
             "pickup": {
-                "address": "서울특별시 송파구 올림픽로 300",
+                "location": {
+                    "longitude": 127.1058,
+                    "latitude": 37.5147
+                },
+                "description": "서울특별시 송파구 올림픽로 300",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -90,7 +118,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 강동구 천호대로 1005",
+                "location": {
+                    "longitude": 127.1238,
+                    "latitude": 37.5407
+                },
+                "description": "서울특별시 강동구 천호대로 1005",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -107,7 +139,11 @@
         },
         {
             "pickup": {
-                "address": "서울특별시 종로구 종로 1",
+                "location": {
+                    "longitude": 126.9748,
+                    "latitude": 37.5665
+                },
+                "description": "서울특별시 종로구 종로 1",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -116,7 +152,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 성북구 동소문로 101",
+                "location": {
+                    "longitude": 127.0106,
+                    "latitude": 37.5894
+                },
+                "description": "서울특별시 성북구 동소문로 101",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -136,7 +176,11 @@
         },
         {
             "pickup": {
-                "address": "경기도 성남시 분당구 판교역로 235",
+                "location": {
+                    "longitude": 127.1058,
+                    "latitude": 37.3953
+                },
+                "description": "경기도 성남시 분당구 판교역로 235",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -145,7 +189,11 @@
                 }
             },
             "delivery": {
-                "address": "경기도 수원시 팔달구 효원로 241",
+                "location": {
+                    "longitude": 127.0276,
+                    "latitude": 37.2636
+                },
+                "description": "경기도 수원시 팔달구 효원로 241",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -162,7 +210,11 @@
         },
         {
             "pickup": {
-                "address": "경기도 고양시 일산서구 킨텍스로 217-60",
+                "location": {
+                    "longitude": 126.7736,
+                    "latitude": 37.6569
+                },
+                "description": "경기도 고양시 일산서구 킨텍스로 217-60",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -171,7 +223,11 @@
                 }
             },
             "delivery": {
-                "address": "경기도 파주시 문산읍 임진각로 148-53",
+                "location": {
+                    "longitude": 126.7781,
+                    "latitude": 37.7595
+                },
+                "description": "경기도 파주시 문산읍 임진각로 148-53",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -188,7 +244,11 @@
         },
         {
             "pickup": {
-                "address": "인천광역시 연수구 송도과학로 16번길 33-4",
+                "location": {
+                    "longitude": 126.6514,
+                    "latitude": 37.3953
+                },
+                "description": "인천광역시 연수구 송도과학로 16번길 33-4",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -197,7 +257,11 @@
                 }
             },
             "delivery": {
-                "address": "인천광역시 중구 월미문화로 99",
+                "location": {
+                    "longitude": 126.6207,
+                    "latitude": 37.4751
+                },
+                "description": "인천광역시 중구 월미문화로 99",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -214,7 +278,11 @@
         },
         {
             "pickup": {
-                "address": "서울특별시 관악구 관악로 1",
+                "location": {
+                    "longitude": 126.9515,
+                    "latitude": 37.4784
+                },
+                "description": "서울특별시 관악구 관악로 1",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -223,7 +291,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 동작구 현충로 210",
+                "location": {
+                    "longitude": 126.9515,
+                    "latitude": 37.5172
+                },
+                "description": "서울특별시 동작구 현충로 210",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -241,7 +313,11 @@
         },
         {
             "pickup": {
-                "address": "서울특별시 동대문구 왕산로 214",
+                "location": {
+                    "longitude": 127.0561,
+                    "latitude": 37.5894
+                },
+                "description": "서울특별시 동대문구 왕산로 214",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -250,7 +326,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 중랑구 망우로 353",
+                "location": {
+                    "longitude": 127.0920,
+                    "latitude": 37.6065
+                },
+                "description": "서울특별시 중랑구 망우로 353",
                 "worktime": 180,
                 "preworktime": 0,
                 "timewindow": {
@@ -271,8 +351,14 @@
     ],
     "vehicles": [
         {
-            "start_address": "물류센터 A (강남)",
-            "end_address": "물류센터 A (강남)",
+            "start_location": {
+                "longitude": 127.0276,
+                "latitude": 37.4979
+            },
+            "end_location": {
+                "longitude": 127.0276,
+                "latitude": 37.4979
+            },
             "capacity": [
                 50
             ],
@@ -291,8 +377,14 @@
             ]
         },
         {
-            "start_address": "물류센터 B (마포)",
-            "end_address": "물류센터 B (마포)",
+            "start_location": {
+                "longitude": 126.9157,
+                "latitude": 37.5665
+            },
+            "end_location": {
+                "longitude": 126.9157,
+                "latitude": 37.5665
+            },
             "capacity": [
                 50
             ],
@@ -313,8 +405,14 @@
             ]
         },
         {
-            "start_address": "물류센터 C (종로)",
-            "end_address": "물류센터 C (종로)",
+            "start_location": {
+                "longitude": 126.9748,
+                "latitude": 37.5665
+            },
+            "end_location": {
+                "longitude": 126.9748,
+                "latitude": 37.5665
+            },
             "capacity": [
                 50
             ],
@@ -332,8 +430,14 @@
             ]
         },
         {
-            "start_address": "물류센터 D (수도권 광역)",
-            "end_address": "물류센터 D (수도권 광역)",
+            "start_location": {
+                "longitude": 127.0000,
+                "latitude": 37.5000
+            },
+            "end_location": {
+                "longitude": 127.0000,
+                "latitude": 37.5000
+            },
             "capacity": [
                 80
             ],

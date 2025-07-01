@@ -44,6 +44,11 @@ Worker Process: Geocoding → OSRM Matrix → OR-Tools Solver → Result Storage
 - 단일 시간창 지원
 - 차량별 휴식 시간 설정
 
+### 4. 정확한 위치 기반 처리
+- WGS84 좌표계 기반 정밀한 위치 정보
+- OSRM과의 직접 연동으로 빠른 거리/시간 계산
+- 사용자 친화적인 주소 설명 제공
+
 ## API 스키마
 
 ### 요청 구조
@@ -53,13 +58,21 @@ Worker Process: Geocoding → OSRM Matrix → OR-Tools Solver → Result Storage
   "shipments": [
     {
       "pickup": {
-        "location": [126.9778, 37.5665],
+        "location": {
+          "longitude": 126.9778,
+          "latitude": 37.5665
+        },
+        "description": "서울특별시 중구 세종대로 110 서울특별시청",
         "worktime": 300,
         "preworktime": 60,
         "timewindow": {"start": "2025-01-15 09:00:00", "end": "2025-01-15 12:00:00"}
       },
       "delivery": {
-        "location": [127.0276, 37.4979],
+        "location": {
+          "longitude": 127.0276,
+          "latitude": 37.4979
+        },
+        "description": "서울특별시 강남구 테헤란로 152 강남파이낸스센터",
         "worktime": 180,
         "preworktime": 30,
         "timewindow": {"start": "2025-01-15 14:00:00", "end": "2025-01-15 18:00:00"}
@@ -69,10 +82,16 @@ Worker Process: Geocoding → OSRM Matrix → OR-Tools Solver → Result Storage
       "skills": [1, 2]
     }
   ],
-  "vehicles": [
-    {
-      "start_address": "서울특별시 중구 세종대로 110",
-      "end_address": "서울특별시 강남구 테헤란로 152",
+      "vehicles": [
+      {
+        "start_location": {
+          "longitude": 126.9748,
+          "latitude": 37.5665
+        },
+        "end_location": {
+          "longitude": 127.0276,
+          "latitude": 37.4979
+        },
       "capacity": [500, 0, 0],
       "timewindow": {"start": "2025-01-15 08:00:00", "end": "2025-01-15 18:00:00"},
       "breaktime": {"start": "2025-01-15 12:00:00", "end": "2025-01-15 13:00:00"},
@@ -128,12 +147,17 @@ Worker Process: Geocoding → OSRM Matrix → OR-Tools Solver → Result Storage
 
 ### 데이터 모델
 
+#### Address
+- `longitude`: 경도 (WGS84, -180.0 ~ 180.0)
+- `latitude`: 위도 (WGS84, -90.0 ~ 90.0)
+
 #### TimeWindow
 - `start`: 시작 시간 (YYYY-MM-DD HH:mm:ss)
 - `end`: 종료 시간 (YYYY-MM-DD HH:mm:ss)
 
 #### ShipmentStep
-- `location`: 좌표 [경도, 위도]
+- `location`: 좌표 정보 (Address 객체)
+- `description`: 주소 설명/상세 정보 (필수, 5-200자)
 - `worktime`: 작업 소요 시간(초)
 - `preworktime`: 사전 작업 시간(초)
 - `timewindow`: 작업 가능 시간대
@@ -146,8 +170,8 @@ Worker Process: Geocoding → OSRM Matrix → OR-Tools Solver → Result Storage
 - `skills`: 필요 차량 스킬 (선택)
 
 #### Vehicle
-- `start_address`: 시작 주소
-- `end_address`: 종료 주소
+- `start_location`: 시작 좌표 (Address 객체)
+- `end_location`: 종료 좌표 (Address 객체)
 - `capacity`: 차량 용량 (다차원 배열)
 - `timewindow`: 운행 시간대
 - `skills`: 보유 스킬 (선택)

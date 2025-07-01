@@ -4,6 +4,29 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 import re
 
 
+class Address(BaseModel):
+    """주소 좌표 정보 모델"""
+
+    longitude: float = Field(..., description="경도 (WGS84)")
+    latitude: float = Field(..., description="위도 (WGS84)")
+
+    @field_validator("longitude")
+    @classmethod
+    def validate_longitude(cls, v: float) -> float:
+        """경도 범위 검증 (-180 ~ 180)"""
+        if v < -180.0 or v > 180.0:
+            raise ValueError("경도는 -180.0 ~ 180.0 범위여야 합니다")
+        return v
+
+    @field_validator("latitude")
+    @classmethod
+    def validate_latitude(cls, v: float) -> float:
+        """위도 범위 검증 (-90 ~ 90)"""
+        if v < -90.0 or v > 90.0:
+            raise ValueError("위도는 -90.0 ~ 90.0 범위여야 합니다")
+        return v
+
+
 class TimeWindow(BaseModel):
     start: str
     end: str
@@ -54,24 +77,25 @@ class TimeWindow(BaseModel):
 
 
 class ShipmentStep(BaseModel):
-    address: str
+    location: Address
+    description: str = Field(..., description="주소 설명/상세 정보")
     worktime: int = Field(0, description="작업 소요 시간(초)")
     preworktime: int = Field(0, description="사전 작업 소요 시간(초)")
     timewindow: TimeWindow
 
-    @field_validator("address")
+    @field_validator("description")
     @classmethod
-    def validate_address(cls, v: str) -> str:
-        """주소 형식 검증"""
+    def validate_description(cls, v: str) -> str:
+        """주소 설명 검증"""
         if not v or not isinstance(v, str):
-            raise ValueError("주소는 필수 입력사항입니다")
+            raise ValueError("주소 설명은 필수 입력사항입니다")
 
         v = v.strip()
         if len(v) < 5:
-            raise ValueError("주소는 최소 5자 이상이어야 합니다")
+            raise ValueError("주소 설명은 최소 5자 이상이어야 합니다")
 
         if len(v) > 200:
-            raise ValueError("주소는 최대 200자까지 입력 가능합니다")
+            raise ValueError("주소 설명은 최대 200자까지 입력 가능합니다")
 
         return v
 
@@ -148,29 +172,13 @@ class Shipment(BaseModel):
 
 
 class Vehicle(BaseModel):
-    start_address: str
-    end_address: str
+    start_location: Address
+    end_location: Address
     capacity: List[int]
     timewindow: TimeWindow
     breaktime: Optional[TimeWindow] = None
     skills: Optional[List[int]] = None
     groups: Optional[List[str]] = None
-
-    @field_validator("start_address", "end_address")
-    @classmethod
-    def validate_address(cls, v: str) -> str:
-        """주소 형식 검증 (ShipmentStep과 동일)"""
-        if not v or not isinstance(v, str):
-            raise ValueError("주소는 필수 입력사항입니다")
-
-        v = v.strip()
-        if len(v) < 5:
-            raise ValueError("주소는 최소 5자 이상이어야 합니다")
-
-        if len(v) > 200:
-            raise ValueError("주소는 최대 200자까지 입력 가능합니다")
-
-        return v
 
     @field_validator("capacity")
     @classmethod

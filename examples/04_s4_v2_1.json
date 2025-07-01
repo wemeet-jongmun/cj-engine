@@ -2,7 +2,11 @@
     "shipments": [
         {
             "pickup": {
-                "address": "대구광역시 중구 동성로2길 81",
+                "location": {
+                    "longitude": 128.5918,
+                    "latitude": 35.8714
+                },
+                "description": "대구광역시 중구 동성로2길 81",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
@@ -11,7 +15,11 @@
                 }
             },
             "delivery": {
-                "address": "대구광역시 수성구 동대구로 386",
+                "location": {
+                    "longitude": 128.6311,
+                    "latitude": 35.8581
+                },
+                "description": "대구광역시 수성구 동대구로 386",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
@@ -25,7 +33,11 @@
         },
         {
             "pickup": {
-                "address": "대구광역시 북구 대학로 80",
+                "location": {
+                    "longitude": 128.6029,
+                    "latitude": 35.8858
+                },
+                "description": "대구광역시 북구 대학로 80",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
@@ -34,7 +46,11 @@
                 }
             },
             "delivery": {
-                "address": "대구광역시 달서구 달구벌대로 1095",
+                "location": {
+                    "longitude": 128.5326,
+                    "latitude": 35.8294
+                },
+                "description": "대구광역시 달서구 달구벌대로 1095",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
@@ -48,7 +64,11 @@
         },
         {
             "pickup": {
-                "address": "대구광역시 동구 동부로22길 20",
+                "location": {
+                    "longitude": 128.6350,
+                    "latitude": 35.8863
+                },
+                "description": "대구광역시 동구 동부로22길 20",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
@@ -57,7 +77,11 @@
                 }
             },
             "delivery": {
-                "address": "대구광역시 남구 명덕로 104",
+                "location": {
+                    "longitude": 128.5972,
+                    "latitude": 35.8456
+                },
+                "description": "대구광역시 남구 명덕로 104",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
@@ -71,7 +95,11 @@
         },
         {
             "pickup": {
-                "address": "대구광역시 서구 국채보상로 257",
+                "location": {
+                    "longitude": 128.5590,
+                    "latitude": 35.8714
+                },
+                "description": "대구광역시 서구 국채보상로 257",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
@@ -80,12 +108,16 @@
                 }
             },
             "delivery": {
-                "address": "대구광역시 달성군 화원읍 비슬로 2596",
+                "location": {
+                    "longitude": 128.4681,
+                    "latitude": 35.7175
+                },
+                "description": "대구광역시 달성군 화원읍 비슬로 2596",
                 "worktime": 120,
                 "preworktime": 0,
                 "timewindow": {
                     "start": "2025-01-18 15:00:00",
-                    "end": "2025-01-18 16:00:00"
+ 줘                   "end": "2025-01-18 16:00:00"
                 }
             },
             "amount": [
@@ -95,8 +127,14 @@
     ],
     "vehicles": [
         {
-            "start_address": "대구광역시 중구 공평로 88",
-            "end_address": "대구광역시 중구 공평로 88",
+            "start_location": {
+                "longitude": 128.5918,
+                "latitude": 35.8714
+            },
+            "end_location": {
+                "longitude": 128.5918,
+                "latitude": 35.8714
+            },
             "capacity": [
                 15
             ],
@@ -106,8 +144,14 @@
             }
         },
         {
-            "start_address": "대구광역시 중구 공평로 88",
-            "end_address": "대구광역시 중구 공평로 88",
+            "start_location": {
+                "longitude": 128.5918,
+                "latitude": 35.8714
+            },
+            "end_location": {
+                "longitude": 128.5918,
+                "latitude": 35.8714
+            },
             "capacity": [
                 15
             ],

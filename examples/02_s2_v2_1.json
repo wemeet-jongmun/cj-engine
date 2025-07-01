@@ -2,7 +2,11 @@
     "shipments": [
         {
             "pickup": {
-                "address": "서울특별시 종로구 세종로 1-91",
+                "location": {
+                    "longitude": 126.9748,
+                    "latitude": 37.5665
+                },
+                "description": "서울특별시 종로구 세종로 1-91",
                 "worktime": 240,
                 "preworktime": 0,
                 "timewindow": {
@@ -11,7 +15,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 송파구 올림픽로 424",
+                "location": {
+                    "longitude": 127.1058,
+                    "latitude": 37.5147
+                },
+                "description": "서울특별시 송파구 올림픽로 424",
                 "worktime": 300,
                 "preworktime": 0,
                 "timewindow": {
@@ -26,7 +34,11 @@
         },
         {
             "pickup": {
-                "address": "경기도 수원시 팔달구 효원로 235",
+                "location": {
+                    "longitude": 127.0276,
+                    "latitude": 37.2636
+                },
+                "description": "경기도 수원시 팔달구 효원로 235",
                 "worktime": 180,
                 "preworktime": 60,
                 "timewindow": {
@@ -35,7 +47,11 @@
                 }
             },
             "delivery": {
-                "address": "경기도 성남시 분당구 판교역로 166",
+                "location": {
+                    "longitude": 127.1058,
+                    "latitude": 37.3953
+                },
+                "description": "경기도 성남시 분당구 판교역로 166",
                 "worktime": 200,
                 "preworktime": 0,
                 "timewindow": {
@@ -51,8 +67,14 @@
     ],
     "vehicles": [
         {
-            "start_address": "서울특별시 강남구 영동대로 513",
-            "end_address": "서울특별시 강남구 영동대로 513",
+            "start_location": {
+                "longitude": 127.0276,
+                "latitude": 37.5172
+            },
+            "end_location": {
+                "longitude": 127.0276,
+                "latitude": 37.5172
+            },
             "capacity": [
                 20,
                 0
@@ -63,8 +85,14 @@
             }
         },
         {
-            "start_address": "경기도 수원시 영통구 광교중앙로 156",
-            "end_address": "경기도 수원시 영통구 광교중앙로 156",
+            "start_location": {
+                "longitude": 127.0561,
+                "latitude": 37.2970
+            },
+            "end_location": {
+                "longitude": 127.0561,
+                "latitude": 37.2970
+            },
             "capacity": [
                 20,
                 0

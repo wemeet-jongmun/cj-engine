@@ -2,7 +2,11 @@
     "shipments": [
         {
             "pickup": {
-                "address": "서울특별시 중구 세종대로 110 서울특별시청",
+                "location": {
+                    "longitude": 126.9748,
+                    "latitude": 37.5665
+                },
+                "description": "서울특별시 중구 세종대로 110 서울특별시청",
                 "worktime": 300,
                 "preworktime": 60,
                 "timewindow": {
@@ -11,7 +15,11 @@
                 }
             },
             "delivery": {
-                "address": "서울특별시 강남구 테헤란로 152 강남파이낸스센터",
+                "location": {
+                    "longitude": 127.0276,
+                    "latitude": 37.4979
+                },
+                "description": "서울특별시 강남구 테헤란로 152 강남파이낸스센터",
                 "worktime": 180,
                 "preworktime": 30,
                 "timewindow": {
@@ -28,8 +36,14 @@
     ],
     "vehicles": [
         {
-            "start_address": "서울특별시 마포구 월드컵로 240 월드컵공원",
-            "end_address": "서울특별시 마포구 월드컵로 240 월드컵공원",
+            "start_location": {
+                "longitude": 126.8895,
+                "latitude": 37.5502
+            },
+            "end_location": {
+                "longitude": 126.8895,
+                "latitude": 37.5502
+            },
             "capacity": [
                 100,
                 50,
