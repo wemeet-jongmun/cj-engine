@@ -92,6 +92,7 @@ Worker Process: Geocoding → OSRM Matrix → OR-Tools Solver → Result Storage
           "longitude": 127.0276,
           "latitude": 37.4979
         },
+        "description": "서울센터 대형배송차량 (멀티권역 담당)",
       "capacity": [500, 0, 0],
       "timewindow": {"start": "2025-01-15 08:00:00", "end": "2025-01-15 18:00:00"},
       "breaktime": {"start": "2025-01-15 12:00:00", "end": "2025-01-15 13:00:00"},
@@ -172,6 +173,7 @@ Worker Process: Geocoding → OSRM Matrix → OR-Tools Solver → Result Storage
 #### Vehicle
 - `start_location`: 시작 좌표 (Address 객체)
 - `end_location`: 종료 좌표 (Address 객체)
+- `description`: 차량 설명/상세 정보 (필수, 5-200자)
 - `capacity`: 차량 용량 (다차원 배열)
 - `timewindow`: 운행 시간대
 - `skills`: 보유 스킬 (선택)

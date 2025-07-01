@@ -87,6 +87,7 @@
                 "longitude": 127.0106,
                 "latitude": 37.4916
             },
+            "description": "서울권역 전문배송차량 (스킬 101, 201)",
             "capacity": [
                 100
             ],
@@ -115,6 +116,7 @@
                 "longitude": 127.0478,
                 "latitude": 37.7380
             },
+            "description": "경기북부권역 전문배송차량 (스킬 102, 202)",
             "capacity": [
                 100
             ],

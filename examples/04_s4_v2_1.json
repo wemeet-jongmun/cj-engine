@@ -117,7 +117,7 @@
                 "preworktime": 0,
                 "timewindow": {
                     "start": "2025-01-18 15:00:00",
- 줘                   "end": "2025-01-18 16:00:00"
+                    "end": "2025-01-18 16:00:00"
                 }
             },
             "amount": [
@@ -135,6 +135,7 @@
                 "longitude": 128.5918,
                 "latitude": 35.8714
             },
+            "description": "대구센터 배송차량 1호",
             "capacity": [
                 15
             ],
@@ -152,6 +153,7 @@
                 "longitude": 128.5918,
                 "latitude": 35.8714
             },
+            "description": "대구센터 배송차량 2호",
             "capacity": [
                 15
             ],

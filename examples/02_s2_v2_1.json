@@ -75,6 +75,7 @@
                 "longitude": 127.0276,
                 "latitude": 37.5172
             },
+            "description": "강남센터 배송차량 1호",
             "capacity": [
                 20,
                 0
@@ -93,6 +94,7 @@
                 "longitude": 127.0561,
                 "latitude": 37.2970
             },
+            "description": "수원센터 배송차량 2호",
             "capacity": [
                 20,
                 0

@@ -174,11 +174,28 @@ class Shipment(BaseModel):
 class Vehicle(BaseModel):
     start_location: Address
     end_location: Address
+    description: str = Field(..., description="차량 설명/상세 정보")
     capacity: List[int]
     timewindow: TimeWindow
     breaktime: Optional[TimeWindow] = None
     skills: Optional[List[int]] = None
     groups: Optional[List[str]] = None
+
+    @field_validator("description")
+    @classmethod
+    def validate_description(cls, v: str) -> str:
+        """차량 설명 검증"""
+        if not v or not isinstance(v, str):
+            raise ValueError("차량 설명은 필수 입력사항입니다")
+
+        v = v.strip()
+        if len(v) < 5:
+            raise ValueError("차량 설명은 최소 5자 이상이어야 합니다")
+
+        if len(v) > 200:
+            raise ValueError("차량 설명은 최대 200자까지 입력 가능합니다")
+
+        return v
 
     @field_validator("capacity")
     @classmethod

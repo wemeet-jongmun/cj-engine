@@ -359,6 +359,7 @@
                 "longitude": 127.0276,
                 "latitude": 37.4979
             },
+            "description": "강남센터 배송차량 (강남/강동/경기남부 담당)",
             "capacity": [
                 50
             ],
@@ -385,6 +386,7 @@
                 "longitude": 126.9157,
                 "latitude": 37.5665
             },
+            "description": "김포센터 배송차량 (강서/인천 담당, 스킬1)",
             "capacity": [
                 50
             ],
@@ -413,6 +415,7 @@
                 "longitude": 126.9748,
                 "latitude": 37.5665
             },
+            "description": "의정부센터 배송차량 (강북/경기북부 담당, 스킬2)",
             "capacity": [
                 50
             ],
@@ -438,6 +441,7 @@
                 "longitude": 127.0000,
                 "latitude": 37.5000
             },
+            "description": "중앙센터 대형배송차량 (멀티스킬 1,2)",
             "capacity": [
                 80
             ],
