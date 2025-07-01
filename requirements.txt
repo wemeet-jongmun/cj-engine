@@ -1,0 +1,11 @@
+# Core
+fastapi
+uvicorn[standard]
+celery
+redis
+ortools
+
+# Testing
+pytest
+pytest-cov
+httpx 

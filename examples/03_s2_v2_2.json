@@ -1,0 +1,107 @@
+{
+    "shipments": [
+        {
+            "pickup": {
+                "address": "서울특별시 용산구 한강대로 405",
+                "worktime": 600,
+                "preworktime": 120,
+                "timewindow": {
+                    "start": "2025-01-17 11:00:00",
+                    "end": "2025-01-17 12:00:00"
+                }
+            },
+            "delivery": {
+                "address": "인천광역시 중구 공항로 272",
+                "worktime": 400,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-17 15:00:00",
+                    "end": "2025-01-17 16:00:00"
+                }
+            },
+            "amount": [
+                50
+            ],
+            "groups": [
+                "서울",
+                "수도권"
+            ],
+            "skills": [
+                101
+            ]
+        },
+        {
+            "pickup": {
+                "address": "경기도 고양시 일산동구 중앙로 1275",
+                "worktime": 300,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-17 10:00:00",
+                    "end": "2025-01-17 11:00:00"
+                }
+            },
+            "delivery": {
+                "address": "경기도 파주시 평화로 1",
+                "worktime": 300,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-17 14:00:00",
+                    "end": "2025-01-17 15:00:00"
+                }
+            },
+            "amount": [
+                30
+            ],
+            "groups": [
+                "경기북부",
+                "수도권"
+            ],
+            "skills": [
+                102
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "start_address": "서울특별시 서초구 반포대로 222",
+            "end_address": "서울특별시 서초구 반포대로 222",
+            "capacity": [
+                100
+            ],
+            "timewindow": {
+                "start": "2025-01-17 08:00:00",
+                "end": "2025-01-17 19:00:00"
+            },
+            "breaktime": {
+                "start": "2025-01-17 12:30:00",
+                "end": "2025-01-17 13:30:00"
+            },
+            "skills": [
+                101,
+                201
+            ],
+            "groups": [
+                "서울"
+            ]
+        },
+        {
+            "start_address": "경기도 의정부시 시민로 1",
+            "end_address": "경기도 의정부시 시민로 1",
+            "capacity": [
+                100
+            ],
+            "timewindow": {
+                "start": "2025-01-17 08:00:00",
+                "end": "2025-01-17 19:00:00"
+            },
+            "breaktime": null,
+            "skills": [
+                102,
+                202
+            ],
+            "groups": [
+                "경기북부"
+            ]
+        }
+    ]
+}

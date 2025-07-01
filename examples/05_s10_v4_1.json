@@ -1,0 +1,351 @@
+{
+    "shipments": [
+        {
+            "pickup": {
+                "address": "서울특별시 강남구 테헤란로 152",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 09:00:00",
+                    "end": "2025-01-20 09:30:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 서초구 서초대로74길 11",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 10:00:00",
+                    "end": "2025-01-20 11:00:00"
+                }
+            },
+            "amount": [
+                10
+            ],
+            "groups": [
+                "강남권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "서울특별시 마포구 월드컵북로 396",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 09:15:00",
+                    "end": "2025-01-20 09:45:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 은평구 통일로 1050",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 10:30:00",
+                    "end": "2025-01-20 11:30:00"
+                }
+            },
+            "amount": [
+                8
+            ],
+            "groups": [
+                "강서권",
+                "강북권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "서울특별시 영등포구 국제금융로 10",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 09:30:00",
+                    "end": "2025-01-20 10:00:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 구로구 디지털로 300",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 11:00:00",
+                    "end": "2025-01-20 12:00:00"
+                }
+            },
+            "amount": [
+                12
+            ],
+            "groups": [
+                "강서권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "서울특별시 송파구 올림픽로 300",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 09:45:00",
+                    "end": "2025-01-20 10:15:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 강동구 천호대로 1005",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 11:30:00",
+                    "end": "2025-01-20 12:30:00"
+                }
+            },
+            "amount": [
+                15
+            ],
+            "groups": [
+                "강동권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "서울특별시 종로구 종로 1",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 10:00:00",
+                    "end": "2025-01-20 10:30:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 성북구 동소문로 101",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 12:00:00",
+                    "end": "2025-01-20 13:00:00"
+                }
+            },
+            "amount": [
+                7
+            ],
+            "groups": [
+                "강북권"
+            ],
+            "skills": [
+                1
+            ]
+        },
+        {
+            "pickup": {
+                "address": "경기도 성남시 분당구 판교역로 235",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 13:00:00",
+                    "end": "2025-01-20 13:30:00"
+                }
+            },
+            "delivery": {
+                "address": "경기도 수원시 팔달구 효원로 241",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 15:00:00",
+                    "end": "2025-01-20 16:00:00"
+                }
+            },
+            "amount": [
+                20
+            ],
+            "groups": [
+                "경기남부권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "경기도 고양시 일산서구 킨텍스로 217-60",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 13:15:00",
+                    "end": "2025-01-20 13:45:00"
+                }
+            },
+            "delivery": {
+                "address": "경기도 파주시 문산읍 임진각로 148-53",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 15:30:00",
+                    "end": "2025-01-20 16:30:00"
+                }
+            },
+            "amount": [
+                18
+            ],
+            "groups": [
+                "경기북부권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "인천광역시 연수구 송도과학로 16번길 33-4",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 13:30:00",
+                    "end": "2025-01-20 14:00:00"
+                }
+            },
+            "delivery": {
+                "address": "인천광역시 중구 월미문화로 99",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 16:00:00",
+                    "end": "2025-01-20 17:00:00"
+                }
+            },
+            "amount": [
+                25
+            ],
+            "groups": [
+                "인천권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "서울특별시 관악구 관악로 1",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 13:45:00",
+                    "end": "2025-01-20 14:15:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 동작구 현충로 210",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 15:00:00",
+                    "end": "2025-01-20 16:00:00"
+                }
+            },
+            "amount": [
+                9
+            ],
+            "groups": [
+                "강남권",
+                "강서권"
+            ]
+        },
+        {
+            "pickup": {
+                "address": "서울특별시 동대문구 왕산로 214",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 14:00:00",
+                    "end": "2025-01-20 14:30:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 중랑구 망우로 353",
+                "worktime": 180,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-20 15:30:00",
+                    "end": "2025-01-20 16:30:00"
+                }
+            },
+            "amount": [
+                11
+            ],
+            "groups": [
+                "강북권"
+            ],
+            "skills": [
+                2
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "start_address": "물류센터 A (강남)",
+            "end_address": "물류센터 A (강남)",
+            "capacity": [
+                50
+            ],
+            "timewindow": {
+                "start": "2025-01-20 08:00:00",
+                "end": "2025-01-20 18:00:00"
+            },
+            "breaktime": {
+                "start": "2025-01-20 12:00:00",
+                "end": "2025-01-20 13:00:00"
+            },
+            "groups": [
+                "강남권",
+                "강동권",
+                "경기남부권"
+            ]
+        },
+        {
+            "start_address": "물류센터 B (마포)",
+            "end_address": "물류센터 B (마포)",
+            "capacity": [
+                50
+            ],
+            "timewindow": {
+                "start": "2025-01-20 08:00:00",
+                "end": "2025-01-20 18:00:00"
+            },
+            "breaktime": {
+                "start": "2025-01-20 12:30:00",
+                "end": "2025-01-20 13:30:00"
+            },
+            "groups": [
+                "강서권",
+                "인천권"
+            ],
+            "skills": [
+                1
+            ]
+        },
+        {
+            "start_address": "물류센터 C (종로)",
+            "end_address": "물류센터 C (종로)",
+            "capacity": [
+                50
+            ],
+            "timewindow": {
+                "start": "2025-01-20 08:00:00",
+                "end": "2025-01-20 18:00:00"
+            },
+            "breaktime": null,
+            "groups": [
+                "강북권",
+                "경기북부권"
+            ],
+            "skills": [
+                2
+            ]
+        },
+        {
+            "start_address": "물류센터 D (수도권 광역)",
+            "end_address": "물류센터 D (수도권 광역)",
+            "capacity": [
+                80
+            ],
+            "timewindow": {
+                "start": "2025-01-20 07:00:00",
+                "end": "2025-01-20 19:00:00"
+            },
+            "breaktime": null,
+            "skills": [
+                1,
+                2
+            ]
+        }
+    ]
+}

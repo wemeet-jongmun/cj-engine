@@ -1,0 +1,78 @@
+{
+    "shipments": [
+        {
+            "pickup": {
+                "address": "서울특별시 종로구 세종로 1-91",
+                "worktime": 240,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-16 10:00:00",
+                    "end": "2025-01-16 11:00:00"
+                }
+            },
+            "delivery": {
+                "address": "서울특별시 송파구 올림픽로 424",
+                "worktime": 300,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-16 14:00:00",
+                    "end": "2025-01-16 15:00:00"
+                }
+            },
+            "amount": [
+                5,
+                0
+            ]
+        },
+        {
+            "pickup": {
+                "address": "경기도 수원시 팔달구 효원로 235",
+                "worktime": 180,
+                "preworktime": 60,
+                "timewindow": {
+                    "start": "2025-01-16 09:30:00",
+                    "end": "2025-01-16 10:30:00"
+                }
+            },
+            "delivery": {
+                "address": "경기도 성남시 분당구 판교역로 166",
+                "worktime": 200,
+                "preworktime": 0,
+                "timewindow": {
+                    "start": "2025-01-16 13:00:00",
+                    "end": "2025-01-16 14:00:00"
+                }
+            },
+            "amount": [
+                8,
+                0
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "start_address": "서울특별시 강남구 영동대로 513",
+            "end_address": "서울특별시 강남구 영동대로 513",
+            "capacity": [
+                20,
+                0
+            ],
+            "timewindow": {
+                "start": "2025-01-16 08:30:00",
+                "end": "2025-01-16 18:00:00"
+            }
+        },
+        {
+            "start_address": "경기도 수원시 영통구 광교중앙로 156",
+            "end_address": "경기도 수원시 영통구 광교중앙로 156",
+            "capacity": [
+                20,
+                0
+            ],
+            "timewindow": {
+                "start": "2025-01-16 08:30:00",
+                "end": "2025-01-16 18:00:00"
+            }
+        }
+    ]
+}
